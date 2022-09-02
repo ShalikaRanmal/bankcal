@@ -8,7 +8,7 @@ public class Main {
         Bank sampath = new Sampath(0.12, 1000);
         Bank commercial = new Commercial(0.12, 1000);
         Bank boc= new BOC(0.11, 1000);
-        Bank peoples = new Peoples(15,1000);
+        Bank peoples = new Peoples(0.15,1000);
         Bank hsbc = new HSBC(0.13, 1000);
 
         RateCalculate rateCal = new RateCalculate();

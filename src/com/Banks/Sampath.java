@@ -4,8 +4,8 @@ import com.bank.Bank;
 
 public class Sampath extends Bank {
     public Sampath(double rate, double deposit){
-        rate = rate;
-        deposit = deposit;
+        this.rate = rate;
+        this.deposit = deposit;
     }
     public double getRate() {
         return rate;
@@ -29,7 +29,7 @@ public class Sampath extends Bank {
 
     @Override
     public double rateCalculate(){
-        return deposit*rate;
+        return this.deposit * this.rate;
     }
 
 }

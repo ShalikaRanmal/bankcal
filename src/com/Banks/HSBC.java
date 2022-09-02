@@ -4,8 +4,8 @@ import com.bank.Bank;
 
 public class HSBC extends Bank {
     public HSBC(double rate, double deposit){
-        rate = rate;
-        deposit = deposit;
+        this.rate = rate;
+        this.deposit = deposit;
     }
     public double getRate() {
         return rate;
@@ -29,6 +29,6 @@ public class HSBC extends Bank {
 
     @Override
     public double rateCalculate(){
-        return deposit*rate;
+        return this.deposit * this.rate;
     }
 }
